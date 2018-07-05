@@ -64,6 +64,9 @@ writew 0xC05C3016 0x420C
 # sleep (s) & usleep (ms)
 search PRI.a7s string: Usage: %s [sec]
 find string XC before this address, hex value: 58 43
+# fw 1.5.12
+writew 0xC0177F36 0x0000 #ms mode
+writew 0xC0177F36 0x4358 #sec mode
 # fw 1.2.13
 writew 0xC0176C5A 0x0000 #ms mode
 writew 0xC0176C5A 0x4358 #sec mode
